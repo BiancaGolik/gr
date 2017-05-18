@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Healthcare sheadule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Bianca">
+
+    <!-- CSS -->
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    
+    <!-- JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+    <script src="js/exampleData.js" type="text/javascript"></script>
+    <script src="js/myscript.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- PAGE -->
+    <div id="page">
+
+        <!-- HEADER -->
+        <header id="header_line">
+            <!-- MENU -->
+            <div id="menu">
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <ul id="options">
+                    <li id="active" onclick="chageOptMenu(0)"><a>dashboard</a></li>
+                    <li  onclick="chageOptMenu(1)"><a>recipes</a></li>
+                    <li onclick="chageOptMenu(2)"><a>challange</a></li>
+                    <li class="disable" onclick="chageOptMenu(3)"><a>profile</a></li>
+                    <li id="profile">
+                        <img src="images/profile.jpg"/>
+                        <p >Olivia Wilde <i class="fa fa-angle-down"></i></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- //MENU -->
+        </header>
+        <!-- //HEADER -->
+        <!-- MAIN -->
+        <div id="main">
+            <!-- SLIDER -->
+            <div id="slider">
+                <!-- PROGRESS -->
+                <div id="progress">
+                    <h6>Your 12 week progress</h6>
+                    <div><svg id="progress_bar"></svg></div>
+                    <div id="notes">
+                        <h6 class="numbers">1</h6>
+                        <h6 class="numbers">2</h6>
+                        <h6 class="numbers">3</h6>
+                        <h6 class="numbers">4</h6>
+                        <h6 class="numbers">5</h6>
+                        <h6 class="numbers">6</h6>
+                        <h6 class="numbers">7</h6>
+                        <h6 class="numbers">8</h6>
+                        <h6 class="numbers">9</h6>
+                        <h6 class="numbers two">10</h6>
+                        <h6 class="numbers two">11</h6>
+                        <h6 class="numbers two">12</h6>
+                    </div>
+                </div>
+                <!-- //PROGRESS -->
+                <!-- TITTLE -->
+                <div id="tittle">
+                    <i class="fa fa-angle-left"  id="weekMinus" onclick="changeWeek(-1)"></i>
+                    <h1 id="weeksNum">Week</h1>
+                    <i class="fa fa-angle-right" id="weekPlus"  onclick="changeWeek(1)"></i>
+                </div>
+                <!-- //TITTLE -->
+                <!-- PROTEINS -->
+                <div id="proteins">
+                    <h6>Select your protein option</h6>
+                    <div id="food">
+                        <img src="images/11.jpg" enable="true"  onclick="chooseFood(1)" />
+                        <img src="images/21.jpg" enable="true"  onclick="chooseFood(2)" />
+                        <img src="images/31.jpg" enable="true" onclick="chooseFood(3)" />
+                        <img src="images/41.jpg" enable="true"  onclick="chooseFood(4)" />
+                        <img src="images/51.jpg" enable="true" onclick="chooseFood(5)" />
+                    </div>
+                </div>
+                <!-- //PROTEINS -->
+            </div>
+            <!-- //SLIDER -->
+                <!-- CALENDAR -->
+                <div id="calendar">
+                    <!-- LEGEND -->
+                    <div id="legend">
+                        <div><h4><b>6:00</b>AM</h4></div>
+                        <div><h4><b>9:00</b>AM</h4></div>
+                        <div><h4><b>12:00</b>PM</h4></div>
+                        <div><h4><b>3:00</b>PM</h4></div>
+                        <div><h4><b>6:00</b>PM</h4></div>
+                        <div><h5><b>Workout</b></h5></div>
+                    </div>
+                    <!-- //LEGEND -->
+                    <!-- DAYS -->
+                    <div class="days" onclick="pickCol(1)"></div>
+                    <div class="days" onclick="pickCol(2)"></div>
+                    <div class="days" onclick="pickCol(3)"></div>
+                    <div class="days" onclick="pickCol(4)"></div>
+                    <div class="days" onclick="pickCol(5)"></div>
+                    <div class="days" onclick="pickCol(6)"></div>
+                    <div class="days" onclick="pickCol(7)">
+                        <div id="sunday"></div>
+                        <div><h0>Guilt-free day</h0><i class="fa fa-smile-o"></i></div>
+                        <div>
+                            <img src="images/print.jpg" />
+                            <a>Print</a>
+                        </div>
+                    </div>
+                    <!-- //DAYS -->
+                </div>
+                <!-- //CALENDAR -->
+            <!-- OTHERS -->
+            <div id="others">
+                <div>
+                    <h2>Running out of products?</h2>
+                    <p>Lorem ipsum dolor sit amet, consect</p>
+                    <p>turadipiscing elit. Integer aliquet.</p>
+                    <a>Buy now <i class="fa fa-angle-right"></i></a>
+                </div>
+                <div>
+                    <h2>Bod•e Trainer in your pocket</h2>
+                    <p>Lorem ipsum dolor sit amet, consect</p>
+                    <p>turadipiscing elit. Integer aliquet.</p>
+                    <a><i class="fa fa-apple"></i>iOS<i class="fa fa-angle-right"></i></a>
+                    <a><i class="fa fa-android"></i>Android<i class="fa fa-angle-right"></i></a>
+                </div>
+                <div>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Lorem ipsum dolor sit amet, consect</p>
+                    <p>turadipiscing elit. Integer aliquet.</p>
+                    <a>Read FAQs <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <!-- //OTHERS -->
+        </div>
+        <!-- //MAIN -->
+
+    </div>
+    <!-- //PAGE -->
+    <script>
+    loadInitial();
+    </script>
+</body>
+</html>
